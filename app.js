@@ -29,13 +29,13 @@ const json = `
     "id": 3,
     "title": "Coleslaw",
     "img": "https://imgur.com/BcgDK7H.jpg",
-    "price": "2,50"
+    "price": "6"
    },
    {
     "id": 4,
     "title": "Classic Burger Meal",
     "img": "https://imgur.com/KksHCsj.jpg",
-    "price": "6,50"
+    "price": "7"
    },
    {
     "id": 5,
@@ -53,7 +53,7 @@ const json = `
     "id": 7,
     "title": "Hot Wings Lrg. Bucket",
     "img": "https://imgur.com/qRIue45.jpg",
-    "price": "16,50"
+    "price": "18"
    }
   ]
  },
@@ -71,13 +71,13 @@ const json = `
     "id": 9,
     "title": "Double Quarter Pounder",
     "img": "https://imgur.com/cdoHXWy.jpg",
-    "price": "5,50"
+    "price": "10"
    },
    {
     "id": 11,
     "title": "10 Piece Chicken McNuggets",
     "img": "https://imgur.com/rqJ2mMf.jpg",
-    "price": "7,50"
+    "price": "8"
    },
    {
     "id": 12,
@@ -113,13 +113,13 @@ const json = `
     "id": 16,
     "title": "FISH'N CRISP",
     "img": "https://imgur.com/Y3xDLQb.jpg",
-    "price": "6,50"
+    "price": "7"
    },
    {
     "id": 17,
     "title": "RYE CHEESY CARAMELIZED ONION",
     "img": "https://imgur.com/UdQEwjd.jpg",
-    "price": "4,50"
+    "price": "5"
    },
    {
     "id": 18,
@@ -137,7 +137,7 @@ const json = `
     "id": 20,
     "title": "ONION RINGS",
     "img": "https://imgur.com/KegrSOn.jpg",
-    "price": "4,50"
+    "price": "7"
    }
   ]
  }
