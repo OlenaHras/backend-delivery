@@ -2,58 +2,143 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html));
+app.get("/", (req, res) => res.type("json").send(json));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-
-const html = `
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello from Render!</title>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script>
-      setTimeout(() => {
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 },
-          disableForReducedMotion: true
-        });
-      }, 500);
-    </script>
-    <style>
-      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
-      @font-face {
-        font-family: "neo-sans";
-        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-        font-style: normal;
-        font-weight: 700;
-      }
-      html {
-        font-family: neo-sans;
-        font-weight: 700;
-        font-size: calc(62rem / 16);
-      }
-      body {
-        background: white;
-      }
-      section {
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      Hello from Render!
-    </section>
-  </body>
-</html>
-`
+const json = `
+[
+ {
+  "id": "dfghfgh",
+  "name": "Crispy Chicken",
+  "menu": [
+   {
+    "id": 1,
+    "title": "Champions Feast",
+    "img": "https://imgur.com/1YPEDDr.jpg",
+    "price": "23"
+   },
+   {
+    "id": 2,
+    "title": "Variety Duo Bucket",
+    "img": "https://imgur.com/VSj1v4s.jpg",
+    "price": "12"
+   },
+   {
+    "id": 3,
+    "title": "Coleslaw",
+    "img": "https://imgur.com/BcgDK7H.jpg",
+    "price": "2,50"
+   },
+   {
+    "id": 4,
+    "title": "Classic Burger Meal",
+    "img": "https://imgur.com/KksHCsj.jpg",
+    "price": "6,50"
+   },
+   {
+    "id": 5,
+    "title": "Veggie Twister",
+    "img": "https://imgur.com/I7GibOh.jpg",
+    "price": "5"
+   },
+   {
+    "id": 6,
+    "title": "Mega Family Feast",
+    "img": "https://imgur.com/3mSNycM.jpg",
+    "price": "29"
+   },
+   {
+    "id": 7,
+    "title": "Hot Wings Lrg. Bucket",
+    "img": "https://imgur.com/qRIue45.jpg",
+    "price": "16,50"
+   }
+  ]
+ },
+ {
+  "id": "yukyuuyk",
+  "name": "McDack",
+  "menu": [
+   {
+    "id": 8,
+    "title": "Big Mac",
+    "img": "https://imgur.com/92GpRll.jpg",
+    "price": "4"
+   },
+   {
+    "id": 9,
+    "title": "Double Quarter Pounder",
+    "img": "https://imgur.com/cdoHXWy.jpg",
+    "price": "5,50"
+   },
+   {
+    "id": 11,
+    "title": "10 Piece Chicken McNuggets",
+    "img": "https://imgur.com/rqJ2mMf.jpg",
+    "price": "7,50"
+   },
+   {
+    "id": 12,
+    "title": "Sausage Burrito",
+    "img": "https://imgur.com/my88gQp.jpg",
+    "price": "5"
+   },
+   {
+    "id": 13,
+    "title": "Spicy McCrispy",
+    "img": "https://imgur.com/3bc8UwO.jpg",
+    "price": "4"
+   }
+  ]
+ },
+ {
+  "id": "dffgjfgj",
+  "name": "Big Burger",
+  "menu": [
+   {
+    "id": 14,
+    "title": "SIGNATURE STEAKHOUSE WHOPPER",
+    "img": "https://imgur.com/iX7jYYQ.jpg",
+    "price": "8"
+   },
+   {
+    "id": 15,
+    "title": "TRIPLE WHOPPER JR WITH CHEESE",
+    "img": "https://imgur.com/jBLzk7j.jpg",
+    "price": "10"
+   },
+   {
+    "id": 16,
+    "title": "FISH'N CRISP",
+    "img": "https://imgur.com/Y3xDLQb.jpg",
+    "price": "6,50"
+   },
+   {
+    "id": 17,
+    "title": "RYE CHEESY CARAMELIZED ONION",
+    "img": "https://imgur.com/UdQEwjd.jpg",
+    "price": "4,50"
+   },
+   {
+    "id": 18,
+    "title": "SALAD",
+    "img": "https://imgur.com/nINrdyc.jpg",
+    "price": "5"
+   },
+   {
+    "id": 19,
+    "title": "FRENCH FRIES",
+    "img": "https://imgur.com/LUv9MwF.jpg",
+    "price": "4"
+   },
+   {
+    "id": 20,
+    "title": "ONION RINGS",
+    "img": "https://imgur.com/KegrSOn.jpg",
+    "price": "4,50"
+   }
+  ]
+ }
+]
+`;
