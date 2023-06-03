@@ -7,7 +7,7 @@ app.use(cors());
 app.get("/shops", (req, res) => res.type("json").send(json));
 app.put("/order", (req, res) => {
   console.log(req.body);
-  return res.status(201);
+  return res.status(201).type("json").send(`{}`);
 });
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
