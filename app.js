@@ -5,6 +5,10 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 
 app.get("/shops", (req, res) => res.type("json").send(json));
+app.put("/order", (req, res) => {
+  console.log(req);
+  res.status(201);
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 const json = `
