@@ -88,7 +88,7 @@ const json = `
    {
     "id": 121,
     "title": "Flurry with OREO",
-    "img": "justify-content: flex-start",
+    "img": "https://i.imgur.com/q4CWj3W.jpg",
     "price": "8"
    },
    {
